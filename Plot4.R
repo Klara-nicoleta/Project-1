@@ -1,3 +1,5 @@
+png("plot4.png", width = 480, height = 480)  
+
 with(filtered_data, {
   par(mfrow = c(2, 2))
   plot(Time, Global_active_power, 
@@ -15,3 +17,4 @@ with(filtered_data, {
        xlab = "Time", ylab = "Global Reactive Power",
        type = "l")
 })
+dev.off()
